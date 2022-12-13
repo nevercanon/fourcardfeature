@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    /* COLORS */
+    --RED: hsl(0, 78%, 62%);
+    --CYAN: hsl(180, 62%, 55%);
+    --ORANGE: hsl(34, 97%, 64%);
+    --BLUE: hsl(212, 86%, 64%);
+
+    /* FONT COLORS */
+
+    --HEADER-COLOR: hsl(234, 12%, 34%);
+    --TEXT-COLOR: hsl(229, 6%, 66%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 100vw; */
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+h1, h2, article p {
+    text-align: center;
+    max-width: 21rem;
+}
+
+h1, h2, h3 {
+    color: var(--HEADER-COLOR);
+}
+
+h1, h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: var(--TEXT-COLOR);
+}
+
+h2 {
+    font-weight: 200;
+    margin-top: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+article p {
+    margin-bottom: 2rem;
+}
+
+section {
+    max-width: 22rem;
+    margin: 1.75rem;
+    padding: 1.75rem;
+    border-top: 5px solid;
+    border-radius: 5px 5px 10px 10px;
+    box-shadow: 0 20px 15px rgba(229, 236, 246);
+}
+
+.cyan {
+    border-color: var(--CYAN);
+}
+
+.red {
+    border-color: var(--RED);
+}
+
+.orange {
+    border-color: var(--ORANGE);
+}
+
+.blue {
+    border-color: var(--BLUE);
+    margin-bottom: 5rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+section p {
+    font-size: 15px;
+}
+figure {
+    text-align: right;
+}
+
+figure img {
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 1250px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section {
+        width: 352px;
+        height: 262px;
+    }
+    
+    main {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+}
